@@ -1,0 +1,45 @@
+@import url('https://fonts.cdnfonts.com/css/tf2-build');
+
+.container {  display: grid;
+    grid-template-columns:  1.3fr 0.7fr 1fr;
+    grid-template-rows: 0.4fr 2.5fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "bodyleft bodyright bodyright"
+      "footer footer footer";
+      height: 100vh;
+  }
+  
+  
+
+  div{
+    text-align: center;
+  }
+
+  .purchase_bottons{
+    width: 100%;
+  }
+  
+  .header { grid-area: header; 
+background-color: rgb(216, 30, 30);
+    text-align: center;
+    font-family: tf2 build;
+  }
+  
+  .footer { grid-area: footer; 
+background-color: rgb(255, 0, 0);
+    text-align: center;
+    font-family: tf2 build;
+  }
+  
+  .bodyright { grid-area: bodyright; 
+background-color: rgb(31, 154, 31);
+font-family: tf2 build;
+}
+  
+  .bodyleft { grid-area: bodyleft; 
+background-color: green;
+font-family: tf2 build;
+}
