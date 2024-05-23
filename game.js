@@ -1,48 +1,49 @@
 let points = 0
 let tracker = document.getElementById("tracker")
 let camera = document.getElementById("camera")
-let computer = document.getElementById("Computer")
+let cameraOwned = document.getElementById("cameraOwned")
+let computer = 0
+let computerOwned = document.getElementById("computerOwned")
+let strorge = document.getElementById("storage")
+
 
 function increaseMoney() {
     points = points + 2000
 
-    tracker.innerText = points + " Dollars"
+    tracker.innerText = points.toFixed(2) + " Dollars"
 }
 
 function buyCamera () {
      if(points >=4000) {
-        points = points -4000
-        tracker.innerText = points + 'Dollars'
+        points = points - 4000
+        tracker.innerText = points + ' Dollars'
         camera = camera + 1 
-        cameraAmount.innerText = books + 'CameraOwned'
-        let cameraAmount = 0
+        cameraOwned.innerText = 'Cameras Owned: ' + camera
         } else {
             alert("You Broke My GUY GET A JOB")
 
      }
 }
 
-function buyComputer () {
+
+
+
+function buycomputer () {
     if(points >=4000) {
-       points = points -4000
-       tracker.innerText = points + 'Dollars'
-       camera = camera + 1 
-       booksAmount.innerText = books + 'Computer Owned'
+       points = points - 4000
+       tracker.innerText = points + ' Dollars'
+       computer = computer + 1 
+       computerOwned.innerText = 'computers Owned: ' + computer
        } else {
            alert("You Broke My GUY GET A JOB")
 
     }
 }
 
-function buyStorage () {
-    if(points >=4000) {
-       points = points -4000
-       tracker.innerText = points + 'Dollars'
-       camera = camera + 1 
-       booksAmount.innerText = books + 'CameraOwned'
-       } else {
-           alert("You Broke My GUY GET A JOB")
 
-    }
+function gameloop() {
+    points = points + (200 * camera)
+    tracker.innerText = points.toFixed(2) + '$ Dollars'
 }
 
+setInterval (gameloop, 1000)
