@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +9,60 @@
     <title>Document</title>
     <link rel="stylesheet" href="cookie.css">
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1> Ultimate Youtube Clicker Game !!!</h1>
         </div>
-        <div class="footer"><h1>Click the Play Bottom to Gain MONEY !!!!</h1>
-
+        <div class="footer">
+            <h1>Click the Play Bottom to Gain MONEY !!!!</h1>
         </div>
         <div class="bodyright">The Store
             <h1>Camera</h1>
             <h1 id="Camera">4000$ Dollars</h1>
-            <button onclick="buyCamera()">
-                <img src="images/Camera.png" alt="Camera" style="width: 200px">
+            <button class="purchase_buttons" onclick="buyCamera()">
+                <img src="images/Camera.png" alt="Camera" style="width:200px">
             </button>
             <div id="cameraOwned">Cameras Owned: 0</div>
             <hr>
             <div>
                 <h1>Computer</h1>
                 <h1>4000$ Dollars</h1>
-                <button onclick="buycomputer()">
-                    <img src="images/Computer.png" alt="Camera" style="width: 200px">
+                <button class="purchase_buttons" onclick="buycomputer()">
+                    <img src="images/Computer.png" alt="Computer" style="width:201px">
                 </button>
                 <div id="computerOwned">computers Owned: 0</div>
+            </div>
+            <hr>
+            <div>
+                <h1>Storage</h1>
+                <h1>4000$ Dollars</h1>
+                <button class="purchase_buttons" onclick="buystorage()">
+                    <img src="images/Storage.png" alt="Storage" style="width:201px">
+                </button>
+                <div id="storageOwned">storage Owned: 0</div>
+            </div>
+            <hr>
+            <div>
+                <h1>Head Phones</h1>
+                <h1>4000$ Dollars</h1>
+                <button class="purchase_buttons" onclick="buyheadphones()">
+                    <img src="images/HeadPhone.png" alt="HeadPhones" style="width:201px">
+                </button>
+                <div id="headphonesOwned">HeadPhones Owned: 0</div>
             </div>
         </div>
         <div class="bodyleft">The Clicker
             <h1 id="tracker">0$ Dollars</h1>
-            <button onclick="increaseMoney()">
+            <button class="button-85" onclick="increaseMoney() ">
                 <img src="images/Youtube Botton Big.jpeg" alt="Forest" style="width:400px">
 
             </button>
-    
+
         </div>
-      </div>
-      <script src="game.js"></script>
+    </div>
+    <script src="game.js"></script>
 </body>
+
 </html>
