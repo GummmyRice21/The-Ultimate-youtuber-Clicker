@@ -54,7 +54,7 @@ function playMusic() {
 }
 
 function increaseMoney() {
-    points = points + 700
+    points = points + 5
 
     tracker.innerText = points.toFixed(2) + "$ Dollars"
 }
